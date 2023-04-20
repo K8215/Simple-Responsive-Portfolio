@@ -1,11 +1,8 @@
-# Simple-Responsive-Portfolio
-A simple responsive web portfolio for showing off your work. <br>
-<br>
-Check it out here: https://simple-responsive-portfolio.glitch.me/
-
 # Simple Responsive Portfolio
 
 Simple Responsive Portfolio is a responsive web design template built using HTML, SCSS, and JavaScript. It is designed to be a simple and easy-to-use portfolio template that looks great on any device.
+
+Check it out here: https://simple-responsive-portfolio.glitch.me/
 
 ## Getting Started
 
