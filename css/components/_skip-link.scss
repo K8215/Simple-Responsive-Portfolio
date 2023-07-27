@@ -1,0 +1,19 @@
+.skip-link {
+	background: $black;
+	color: $white;
+	height: 1px;
+	left: -999px;
+	position: absolute;
+	top: auto;
+	width: 1px;
+
+	&:focus,
+	&:focus-within {
+		display: inline-block;
+		height: auto;
+		margin: auto;
+		outline: none;
+		position: static;
+		width: 100%;
+	}
+}

@@ -1,0 +1,36 @@
+.hero {
+	align-items: center;
+	background: $dark;
+	// background-image: url("../img/cloud.png");
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-position: center;
+	// background-attachment: fixed;
+	border: 0;
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+	color: $white;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+
+	&__heading {
+		display: inline-block;
+		font-size: 6rem;
+		line-height: 1.35;
+		margin: 0;
+
+		span {
+			background: $white !important;
+			color: $dark !important;
+		}
+
+		@include break(lg) {
+			font-size: 4rem;
+		}
+
+		@include break(sm) {
+			font-size: 3.5rem;
+		}
+	}
+}

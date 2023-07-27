@@ -1,0 +1,58 @@
+.header {
+	align-items: center;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: 0 1.618rem;
+	position: fixed;
+	transition: all 0.5s ease;
+	width: 100%;
+	z-index: 1000;
+
+	&__logo {
+		display: block;
+		font-size: 3rem;
+		margin: 0;
+		padding: 0;
+
+		@include break(md) {
+			font-size: 2rem;
+		}
+	}
+
+	&__link {
+		@include navLinks;
+
+		&:hover {
+			background: $black;
+			color: $white;
+		}
+	}
+
+	&.js-open {
+		nav {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+
+	&.js-scrolled {
+		background: $black;
+		color: $white;
+
+		a:hover {
+			color: $dark;
+		}
+	}
+
+	@include break(xl) {
+		align-items: center;
+		background: $black;
+		display: flex;
+		justify-content: space-between;
+		height: auto;
+		position: fixed;
+		width: 100%;
+	}
+}

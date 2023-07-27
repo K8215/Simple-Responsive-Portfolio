@@ -12,47 +12,49 @@
 	</head>
 
 	<body id="top">
-		<a id="skip-link" href="#main"> Skip Navigation </a>
-		<header>
-			<div class="logo">
-				<a href="#top" aria-label="Return home">Logo</a>
+		<a class="skip-link" href="#main"> Skip Navigation </a>
+
+		<header id="js-header" class="header">
+			<div class="header__logo">
+				<a class="header__link" href="#top" aria-label="Return home">Logo</a>
 			</div>
 
 			<button
-				id="mobile-toggler"
-				class="hamburger hamburger--squeeze"
+				id="js-menu-toggle"
+				class="menu-toggler hamburger hamburger--squeeze"
 				type="button"
+				aria-label="open navigation menu"
 			>
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
 				</span>
 			</button>
 
-			<nav>
-				<ul id="navigation">
-					<li><a href="#about">About</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#skills">Skills </a></li>
-					<li><a href="#experience">Experience</a></li>
-				</ul>
-				<ul class="social">
-					<li><a href="#" target="_blank" rel="noopener">G</a></li>
-					<li><a href="#" target="_blank" rel="noopener">in</a></li>
+			<nav class="nav">
+				<ul class="nav__ul" id="js-nav">
+					<li class="nav__li"><a class="nav__a" href="#about">About</a></li>
+					<li class="nav__li"><a class="nav__a" href="#work">Work</a></li>
+					<li class="nav__li">
+						<a class="nav__a" href="#skills">Skills </a>
+					</li>
+					<li class="nav__li">
+						<a class="nav__a" href="#experience">Experience</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="main">
-			<section id="hero">
+			<section class="hero">
 				<div class="container">
-					<h1>Hi I'm <span>Me</span>. <br />I make things.</h1>
-					<a href="#work" class="btn special">See My Work</a>
+					<h1 class="hero__heading">Hi I'm Me. <br />I make things.</h1>
+					<a href="#work" class="btn btn--special">See My Work</a>
 				</div>
 			</section>
 
-			<section id="about" class="flex">
+			<section id="about">
 				<div class="container">
-					<h2>Nice to <span>meet</span> you.</h2>
+					<h2>Nice to meet you.</h2>
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
 						aliquam quae architecto eum mollitia veritatis error pariatur eius
@@ -66,80 +68,169 @@
 
 			<section id="work">
 				<div class="container">
-					<h2 class="text-center">Here's my <span>work.</span></h2>
+					<h2 class="text-center">Here's my work.</h2>
 				</div>
 				<div class="portfolio">
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
-					<div class="portfolio__card">
-						<a href="#" target="_blank" rel="noopener">
-							<figure>
-								<img src="https://via.placeholder.com/350" alt="" />
-								<cite>Project Title</cite>
-							</figure>
-						</a>
-					</div>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
+					<a
+						class="portfolio__card"
+						href="#"
+						target="_blank"
+						rel="external noopener noreferrer"
+						aria-label="Visit the Sample site in a new tab"
+					>
+						<figure class="portfolio__figure">
+							<img
+								class="portfolio__img"
+								src="https://via.placeholder.com/350"
+								alt="#"
+								loading="lazy"
+							/>
+							<figcaption class="portfolio__caption">Project Title</figcaption>
+						</figure>
+					</a>
 				</div>
 			</section>
 
-			<section id="skills">
+			<section id="skills" class="section--dark">
 				<div class="container">
-					<h2>Here's what I <span>do.</span></h2>
-					<div class="flex-split">
+					<h2>Here's what I do.</h2>
+					<div class="split">
 						<ul>
 							<li>Skill number 1</li>
 							<li>Skill number 2</li>
@@ -149,7 +240,7 @@
 							<li>Such production</li>
 							<li>Wow</li>
 						</ul>
-						<ul class="logos">
+						<ul class="logo-grid">
 							<li>&star;</li>
 							<li>&star;</li>
 							<li>&star;</li>
@@ -163,9 +254,9 @@
 
 			<section id="experience">
 				<div class="container">
-					<h2>Here's <span>where</span> I've been.</h2>
+					<h2>Here's where I've been.</h2>
 					<h3 class="sub">Employer</h3>
-					<p class="details">Position | Location | Date - Range</p>
+					<p class="detail">Position | Location | Date - Range</p>
 					<p>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut sequi
 						veniam, ea ex, aliquid quo molestias quibusdam illo amet rem
@@ -173,7 +264,7 @@
 						Ipsa, dolorem!
 					</p>
 					<h3 class="sub">Employer</h3>
-					<p class="details">Position | Location | Date - Range</p>
+					<p class="detail">Position | Location | Date - Range</p>
 					<p>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut sequi
 						veniam, ea ex, aliquid quo molestias quibusdam illo amet rem
@@ -181,7 +272,7 @@
 						Ipsa, dolorem!
 					</p>
 					<h3 class="sub">School</h3>
-					<p class="details">Summa Cum Laude | Location | Date - Range</p>
+					<p class="detail">Summa Cum Laude | Location | Date - Range</p>
 					<p>
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
 						quis animi saepe repellendus veritatis, dolor alias reiciendis

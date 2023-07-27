@@ -1,0 +1,27 @@
+.logo-grid {
+	align-items: center;
+	color: $dark;
+	display: grid;
+	flex-wrap: wrap;
+	font-size: 6.5rem;
+	justify-content: flex-start;
+	gap: 10px 0;
+	grid-template-columns: repeat(3, 1fr);
+	list-style: none;
+	padding: 0;
+
+	&__icon {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+
+	@include break(md) {
+		font-size: 5rem;
+	}
+
+	@include break(md) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

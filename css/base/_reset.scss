@@ -1,0 +1,147 @@
+//Reset
+* {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: $font;
+	font-weight: 500;
+	color: $black;
+	line-height: 1.618;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+address {
+	line-height: normal;
+	margin: 0 0 1.618rem;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 4.85rem;
+	line-height: 1.25;
+	margin: 0 0 2rem;
+
+	@include break(xl) {
+		font-size: 4rem;
+	}
+
+	@include break(md) {
+		font-size: 3rem;
+		margin: 0 0 50px;
+	}
+
+	@include break(sm) {
+		font-size: 2.25rem;
+		text-align: left;
+	}
+}
+
+h3 {
+	font-size: 2rem;
+
+	&.sub {
+		margin: 0;
+		text-align: left;
+	}
+
+	@include break(sm) {
+		font-size: 1.5rem;
+	}
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.25;
+}
+
+a {
+	color: $black;
+	transition: ease all 0.25s;
+
+	&:hover {
+		background: $dark;
+		color: $white;
+	}
+
+	&:focus,
+	&:focus-visible {
+		outline: 5px solid $accessible;
+	}
+}
+
+ul,
+ol {
+	font-size: 1.5rem;
+	padding: 0 0 0 30px;
+
+	li {
+		margin: 0 0 10px;
+	}
+
+	@include break(md) {
+		font-size: 1.25rem;
+	}
+}
+
+br {
+	@include break(md) {
+		display: none;
+	}
+}
+
+blockquote {
+	font-size: 1.25rem;
+	margin: 0 auto calc(1.618em * 2);
+	max-width: 720px;
+	line-height: normal;
+	text-align: center;
+
+	cite {
+		display: block;
+		clear: both;
+		font-size: 1rem;
+		font-style: normal;
+		margin: 1rem 0 0;
+	}
+
+	&:last-of-type {
+		margin: 0 auto;
+	}
+}
+
+section {
+	padding: 150px 0;
+	position: relative;
+	width: 100%;
+
+	@include break(xl) {
+		width: 100%;
+	}
+
+	@include break(md) {
+		padding: 50px 0;
+	}
+}
